@@ -3,20 +3,16 @@
     padding: 0;
     margin: 0;
     font-family: 'poppins', sans-serif;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 body{
-    /*height: 100vh;*/
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-color: cornflowerblue;
+    background-color: whitesmoke;
 }
 
-.container{
-    width: 550px;
-    padding: 30px;
+.main_container{
+    width: 440px;
+    padding: 5px 20px 15px 20px;
     border: 1px solid #eeeeee;
     border-radius:10px;
     background-color: #003b5b;
@@ -24,11 +20,19 @@ body{
     -webkit-box-shadow: 9px 9px 11px -8px rgba(135,132,135,1);
     -moz-box-shadow: 9px 9px 11px -8px rgba(135,132,135,1);
     box-shadow: 9px 9px 11px -8px rgba(135,132,135,1);
+    /*height: 100vh;*/
+}
+
+.container{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: cornflowerblue;
+    padding: 30px 0px 30px 0px;
 }
 
 h4{
     margin-left: 15px;
-    font-size: 24px;
+    font-size: 18px;
     color: white;
     text-align: center;
 }
@@ -37,11 +41,14 @@ h4{
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-bottom: 20px;
+    margin:20px 0px 20px 0px;
+    flex-direction: column;
 }
 
 .logo{
     width: 10%;
+    max-width: 55px;
+    margin-bottom: 10px;
 }
 
 input{
@@ -71,19 +78,46 @@ textarea:focus{
 .hr{
     width: 100%;
     color: white;
-    margin-bottom: 20px;
+    margin: auto;
 }
 
 .hr2{
     width: 80%;
+    max-width: 320px;
     color: white;
     margin: auto;
 }
 
+.main_title{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.intro_text{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    font-size: 14px;
+    color: darkslategrey;
+}
+
+.intro_text_bold{
+    margin: auto;
+    text-align: center;
+    width: 70%;
+    font-size: 14px;
+    color: darkslategrey;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
 .text_variable{
     color: white;
-    font-size: 18px;
-    margin-bottom: 10px;
+    font-size: 15px;
+    margin: 10px 0px;
+    padding-top: 10px;
 }
 
 .text_variable2{
@@ -97,10 +131,10 @@ textarea:focus{
 
 .text_variable2complement{
     color: white;
-    font-size: 15px;
+    font-size: 13px;
     margin-bottom: 10px;
     text-align: center;
-    margin: 7px 0px 17px 0px;
+    margin: 7px 0px 0px 0px;
 }
 
 .btn{
