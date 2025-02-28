@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Acta del proyecto</title>
+</head>
+<body>
+    <div class="divLogo">
+        <img class="logo" src="./images/logo.png" />
+        <p class="main_title">Acta del proyecto</p>
+    </div>
+    <p class="intro_text">El presente documento da formalidad al inicio de una nueva iniciativa, el cual contiene información esencial que nos ayuda a asegurar una alineación efectiva con todos los involucrados.</p>
+    <p class="intro_text_bold">NOTA: Es necesario registrar cada uno de los campos correspondientes para poder generar el acta del proyecto.</p>
+    <br/>
+
+<!-- Note: The link is the script from "Apps scripts". The conection between the form and excel -->
+<form method="post" id="form" action="https://script.google.com/macros/s/AKfycbxB5uq-YK2bOTDbNY0IDVCcApvm29kvHJDO5PSJky7x1mhlHGq6kgssZhO2g4d5UpTI/exec" name="proyect">
+    <div class="container">
+                <div>
+                    <div class="main_container">
+                        <div class="divLogo">
+                            <h4>Objetivo</h4>
+                        </div>
+                        <hr class="hr">
+
+                        <p class="text_variable">Nombre del proyecto:</p>
+                        <input type="text" id="doc_docname" name="doc-docname" placeholder="Proyecto." required>
+                        <p class="text_variable">Objetivo del proyecto:</p>
+                        <textarea  id="message_objetive" name="doc-objetive" rows="4" placeholder="¿Cuál es el objetivo del proyecto?" required></textarea>
+                        <p class="text_variable">Desafío por resolver:</p>
+                        <textarea  id="message_challenge" name="doc-challenge" rows="4" placeholder="¿Qué desafío se busca resolver con el proyecto?" required></textarea>
+                    </div>
+                
+                    <div class="main_container">
+                            <div class="divLogo">
+                                <h4>Alcance</h4>
+                            </div>
+                            <hr class="hr">
+
+                            <p class="text_variable">Alcance del proyecto:</p>
+                            <textarea  id="message_scope" name="doc-scope" rows="4" placeholder="Definición del alcande del proyecto." required></textarea>
+                            <p class="text_variable">Canal(es) a implementar:</p>
+                            <input type="text" id="doc_canal" name="doc-canal" placeholder="Canal(es) donde se pretende implementar." required>
+                            <p class="text_variable">Actividades a desarrollar:</p>
+                            <textarea  id="message_task" name="doc-task" rows="4" placeholder="Listado de actividades a desarrollar para la ejecución del proyecto." required></textarea>
+                            <p class="text_variable">¿Se requiere de desarrollo de TI? (¿De qué tipo?):</p>
+                            <input type="text" id="doc_ti" name="doc-ti" placeholder="Desarrollo de TI." required>
+                            <p class="text_variable">¿Qué proceso comercial modifica?:</p>
+                            <input type="text" id="doc_comercial" name="doc-comercial" placeholder="Proceso comercial a intervenir." required>
+
+                            <div class="divLogo">
+                                <h4>Tiempo</h4>
+                            </div>
+                            <hr class="hr">
+
+                            <p class="text_variable">Trimestre en el que se pretende implementar:</p>
+                            <input type="text" id="doc_trimestre" name="doc-trimestre" placeholder="Trimestre." required>
+                            <p class="text_variable">Tiempo estimado del proyecto (meses):</p>
+                            <input type="text" id="doc_month" name="doc-month" placeholder="Meses." required>
+
+                            <div class="divLogo">
+                                <h4>Costos</h4>
+                            </div>
+                            <hr class="hr">
+
+                            <p class="text_variable">Presupuesto necesario para el desarrollo del proyecto:</p>
+                            <input type="text" id="doc_budget" name="doc-budget" placeholder="$" required>
+                    </div>
+                </div>
+            
+            
+                <div>
+                    <div class="main_container">
+                        <div class="divLogo">
+                            <h4>Riesgos</h4>
+                        </div>
+                        <hr class="hr">
+
+                        <p class="text_variable">Afectaciones externas (clientes):</p>
+                        <textarea  id="message_affectclients" name="doc-affectclients" rows="4" placeholder="¿Qué afectaciones externas están implicadas?" required></textarea>
+                        <p class="text_variable">Afectaciones internas (Gepp):</p>
+                        <textarea  id="message_interngepp" name="doc-interngepp" rows="4" placeholder="¿Qué afectaciones internas están implicadas?" required></textarea>
+                        <p class="text_variable">Áreas de dependencia:</p>
+                        <textarea  id="message_area" name="doc-area" rows="4" placeholder="¿Qué dependencias se tienen con otras áreas?" required></textarea>
+
+                        <div class="divLogo">
+                            <h4>Beneficios</h4>
+                            <p class="text_variable2complement">(Registrar al menos 2 opciones)</p>
+                            <p class="text_variable2complement">Si 2 de los 4 criterios no son aplicables, registrar "N/A".</p>
+                        </div>
+                        <hr class="hr">
+
+                            <p class="text_variable">Reducción de costos:</p>
+                            <input type="text" id="doc_costreduction" name="doc-costreduction" placeholder="Cantidad de reducción de costos." required>
+                            <p class="text_variable">Incremento en el ingreso o cajas físicas:</p>
+                            <input type="text" id="doc_income" name="doc-income" placeholder="Cantidad de incremento en el ingreso/CF." required>
+                            <p class="text_variable">Valor presente neto:</p>
+                            <input  type="text" id="doc_vpn" name="doc-vpn" placeholder="Cantidad de VPN." required>
+                            <p class="text_variable">Retorno de inversión:</p>
+                            <input type="text" id="doc_roi" name="doc-roi" placeholder="Cantidad de ROI." required>
+                    </div>
+                
+                    <div class="main_container">
+                        <div class="divLogo">
+                            <h4>Autorizadores</h4>
+                        </div>
+                        <hr class="hr">
+
+                        <p class="text_variable">Nombre del solicitante:</p>
+                        <input type="text" id="doc_username" name="doc-username" placeholder="Nombre completo." required>
+                        <p class="text_variable">Líder del proyecto:</p>
+                        <input type="text" id="doc_lider" name="doc-lider" placeholder="Líder asignado del proyecto." required>
+                        
+                        <p class="text_variable">Definición del equipo, sus roles y responsabilidades:</p>
+                        <textarea  id="message_team" name="doc-team" rows="4" placeholder="Registra su nombre completo, rol y responsabilidades en el proyecto." required></textarea>
+                        <p class="text_variable">Autorizadores:</p>
+                        <textarea  id="message_authorizer" name="doc-authorizer" rows="4" placeholder="Nombre completo de los autorizadores." required></textarea>
+                        <p class="text_variable">Fecha de registro del acta:</p>
+                        <input type="date" id="doc_date" name="doc-date" placeholder="Fecha." required>
+
+                        <!--<input disabled class="btn" type="submit" value="Generar acta del proyecto" id="submit">-->
+                        <button class="btn" disabled  type="submit" value="Submit" id="submit" onclick="alert()">Generar acta del proyecto</button>
+                    </div>
+            </div>
+    </div>        
+</form>
+ 
+    
+    
+
+    
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="project_base.js"></script>
+
+</body>
+</html>
